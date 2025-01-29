@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
-import './modal.css';
+import './agendamento.module.css';
+import styles from '../pages/agendamento.module.css';
 
 interface ModalProps {
   isOpen: boolean;
@@ -69,6 +70,15 @@ export function Modal({ isOpen, onClose }: ModalProps) {
       </div>
     </div>
   );
+}
 
+export function App() {
+  const [isModalOpen, setIsModalOpen] = useState(false);
 
+  return (
+    <div>
+      <button onClick={() => setIsModalOpen(true)}>Agendamento</button>
+      <Modal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} />
+    </div>
+  );
 }

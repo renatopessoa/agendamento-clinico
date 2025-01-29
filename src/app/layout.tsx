@@ -1,13 +1,9 @@
 import type { Metadata } from "next";
 import { Poppins } from "next/font/google";
-import "../app/styles.css";
-import { Header } from '../components/header/header';
-import { Footer } from '../components/footer/footer';
-import { Specialties } from "@/components/specialties/specialties";
-import { exams } from "../components/exams/exams";
-import Link from "next/link";
-import styles from './footer.module.css';
-import { FaFacebook, FaInstagram, FaWhatsapp } from 'react-icons/fa';
+import { Header } from "@/components/header/header";
+
+
+
 
 const poppins = Poppins({
   subsets: ["latin"],
