@@ -1,0 +1,55 @@
+.info_container {
+    display: flex;                    /* Define o container como flexbox */
+    justify-content: space-between;   /* Distribui os elementos com espaço igual entre eles */
+    align-items: flex-start;         /* Alinha os itens ao topo do container */
+    padding: 2rem;                   /* Adiciona espaçamento interno de 2rem em todos os lados */
+    background: linear-gradient(45deg,
+          #003D65 0%,
+          #54add7 50%,
+          #003D65 100%);             /* Define a cor de fundo azul */
+    color: white;                    /* Define a cor do texto como branco */
+    gap: 1rem;                       /* Adiciona espaçamento de 1rem entre os elementos filhos */
+  }
+  
+  .contact_section {
+    display: flex;                   /* Define a seção de contato como flexbox */
+    gap: 8rem;                       /* Adiciona espaçamento de 8rem entre elementos */
+    flex: 2;                         /* Define que esta seção ocupará 2/3 do espaço disponível */
+  }
+  
+  .social_section {
+    flex: 1;                         /* Define que esta seção ocupará 1/3 do espaço disponível */
+    display: flex;                   /* Define a seção social como flexbox */
+    flex-direction: column;          /* Organiza os elementos em coluna */
+    align-items: flex-end;          /* Alinha os itens à direita */
+    padding-right: 2rem;            /* Adiciona espaçamento à direita */
+  }
+  
+  .address, .social {
+    flex: 1;                         /* Distribui espaço igualmente entre endereço e social */
+    text-align: center;              /* Centraliza o texto dentro das seções */
+  }
+  
+  .address h3, 
+  .social h4,
+  .info_container h3 {
+    font-size: 1.5rem;              /* Define o tamanho da fonte dos títulos */
+    margin-bottom: 1rem;            /* Adiciona margem inferior aos títulos */
+    text-align: center;             /* Centraliza os títulos */
+  }
+  
+  .social_icons {
+    display: flex;                  /* Define os ícones sociais como flexbox */
+    gap: 2rem;                      /* Adiciona espaçamento entre os ícones */
+    margin-top: 1rem;               /* Adiciona margem superior aos ícones */
+  }
+  
+  .social_icons a:hover {
+    color: #54add7;               /* Define a cor do texto dos ícones ao passar o mouse */
+    transform: translateY(-3px);    /* Adiciona uma transição de -3px ao passar o mouse */
+  }
+  
+  
+  
+  
+  

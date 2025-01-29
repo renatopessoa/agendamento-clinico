@@ -1,0 +1,102 @@
+/* Container principal que envolve toda a seção de especialidades */
+.specialties_section {
+    position: relative;      /* Define posicionamento relativo para conter elementos absolutos */
+    width: 100%;            /* Ocupa toda a largura disponível */
+    padding: 2rem;          /* Adiciona espaço interno de 2rem em todos os lados */
+}
+
+/* Container do título principal */
+.specialties_title {
+    position: absolute;      /* Remove do fluxo normal do documento */
+    left: 50%;              /* Posiciona a 50% da esquerda */
+    transform: translateX(-50%); /* Centraliza horizontalmente */
+    text-align: center;     /* Alinha o texto ao centro */
+    margin-top: 65rem;      /* Define espaço superior */
+    z-index: 2;             /* Define ordem de empilhamento */
+    width: 100%;            /* Ocupa toda a largura disponível */
+    display: flex;          /* Habilita flexbox */
+    justify-content: center; /* Centraliza conteúdo horizontalmente */
+}
+
+/* Estilização do texto do título */
+.specialties_title h2 {
+    color: #fff;            /* Define cor do texto como branco */
+    background-color: #2989c9; /* Define cor de fundo azul */
+    font-size: 2.5rem;      /* Define tamanho da fonte */
+    font-weight: 600;       /* Define peso da fonte */
+    text-transform: uppercase; /* Converte texto para maiúsculas */
+    letter-spacing: 2px;    /* Adiciona espaçamento entre letras */
+    padding: 1rem 4rem;     /* Adiciona espaço interno vertical e horizontal */
+    border-radius: 0 25px 0 25px; /* Arredonda cantos específicos */
+    min-width: 400px;       /* Define largura mínima */
+}
+
+/* Grid de cards de especialidades */
+.specialties_grid {
+    position: absolute;      /* Remove do fluxo normal do documento */
+    width: 1200px;          /* Define largura fixa */
+    left: 50%;              /* Posiciona a 50% da esquerda */
+    transform: translateX(-50%); /* Centraliza horizontalmente */
+    margin-top: 75rem;      /* Define espaço superior */
+    z-index: 2;             /* Define ordem de empilhamento */
+    text-align: center;     /* Alinha texto ao centro */
+}
+
+/* Estilos do card individual */
+.specialty_card {    
+    background: white;      /* Define fundo branco */
+    border-radius: 15px;    /* Arredonda os cantos */
+    overflow: hidden;       /* Esconde conteúdo que ultrapassa os limites */
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1); /* Adiciona sombra */
+    transition: transform 0.3s ease; /* Adiciona transição suave */
+    width: 380px;          /* Define largura fixa */
+    height: 500px;          /* Ocupa toda a altura disponível */
+    margin: 0 auto;        /* Centraliza horizontalmente */
+}
+
+/* Efeito hover do card */
+.specialty_card:hover {
+    transform: translateY(-10px); /* Move o card para cima ao passar o mouse */
+}
+
+/* Container da imagem do card */
+.image_container {
+    position: relative;     /* Define posicionamento relativo */
+    width: 100%;           /* Ocupa toda a largura disponível */
+    height: 350px;         /* Aumentado para dar mais espaço à imagem */
+}
+
+/* Estilização da imagem */
+.image_container img {
+    width: 100%;           /* Ocupa toda a largura do container */
+    height: 100%;          /* Ajustado para ocupar 100% do container */
+    object-fit: cover;     /* Mantém proporção da imagem preenchendo o espaço */
+}
+
+.specialty_card h3 {
+    color: #003D65;        /* Cor do texto */
+    font-size: 1.8rem;     /* Tamanho da fonte */
+    padding: 1rem 1.5rem;  /* Reduzido o padding */
+    text-align: center;    /* Alinhamento do texto */
+    margin: 2rem auto 0;   /* Aumentado margem superior */
+    font-weight: 600;      /* Peso da fonte */
+    position: relative;    /* Adicionado posicionamento relativo */
+    bottom: 0;            /* Posiciona na parte inferior do card */
+}
+
+/* Estilização do slider */
+.specialties_slider {
+    width: 100%;           /* Ocupa toda a largura disponível */
+    padding: 2rem 4rem;    /* Adiciona espaço para as setas de navegação */
+}
+
+/* Customização das setas de navegação */
+:global(.swiper-button-next),
+:global(.swiper-button-prev) {
+    color: #003D65;        /* Cor das setas de navegação */
+}
+
+/* Customização dos pontos de navegação */
+:global(.swiper-pagination-bullet-active) {
+    background: #003D65;   /* Cor do ponto ativo */
+}

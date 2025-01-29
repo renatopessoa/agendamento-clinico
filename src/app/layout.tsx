@@ -1,6 +1,13 @@
 import type { Metadata } from "next";
 import { Poppins } from "next/font/google";
-import "./styles.css";
+import "../app/styles.css";
+import { Header } from '../components/header/header';
+import { Footer } from '../components/footer/footer';
+import { Specialties } from "@/components/specialties/specialties";
+import { exams } from "../components/exams/exams";
+import Link from "next/link";
+import styles from './footer.module.css';
+import { FaFacebook, FaInstagram, FaWhatsapp } from 'react-icons/fa';
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -20,6 +27,7 @@ export default function RootLayout({
   return (
     <html lang="pt-BR">
       <body className={'poppins'}>
+        <Header />
         {children}
       </body>
     </html>
