@@ -81,6 +81,7 @@ export function Header() {
                             type="button"
                             aria-label="Agendar consulta"
                             onClick={() => setIsModalOpen(true)}
+
                         >
                             Agende sua consulta
                         </button>
@@ -107,9 +108,5 @@ export function Header() {
                 </section>
             </main>
         </>
-
-
     );
-
-
 }
