@@ -43,7 +43,7 @@ export function Header() {
                             {navItems.map(({ href, label }) => (
                                 <li key={href}>
                                     <Link href={href}>
-                                        {label}
+                                        {/* {label} */}
                                     </Link>
                                 </li>
                             ))}
@@ -54,7 +54,7 @@ export function Header() {
                             className="login-button"
                             onClick={() => setIsLoginModalOpen(true)}
                         >
-                            Login
+                            {/* Login */}
                         </button>
                     </div>
                 </div>
