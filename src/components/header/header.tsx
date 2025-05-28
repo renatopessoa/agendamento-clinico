@@ -151,7 +151,7 @@ export function Header() {
                         </div>
                         
                         <div className="modal-text">
-                            <h3>Olá! Eu sou seu assistente virtual</h3>
+                            <h3>Olá! Eu sou Judite sua assistente virtual</h3>
                             <p>Estou aqui para ajudá-lo com o agendamento da sua consulta. Vamos começar?</p>
                         </div>
                         

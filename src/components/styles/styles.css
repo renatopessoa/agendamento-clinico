@@ -374,7 +374,11 @@
 }
 
 .modal-content {
-    background: white;
+    background:linear-gradient(
+        45deg,
+        #003D65 0%,
+        #54add7 50%,
+        #003D65 100%);
     border-radius: 20px;
     padding: 2rem;
     max-width: 500px;
@@ -422,10 +426,10 @@
 .robot-head {
     width: 60px;
     height: 55px;
-    background: linear-gradient(145deg, #4a90e2, #357abd);
+    background: linear-gradient(145deg, #b8d3f1, #357abd);
     border-radius: 20px;
     position: relative;
-    border: 2px solid #2c5aa0;
+    border: 2px solid #5692ec;
     box-shadow: 0 6px 15px rgba(74, 144, 226, 0.3);
 }
 
@@ -508,7 +512,7 @@
 .robot-body {
     width: 70px;
     height: 60px;
-    background: linear-gradient(145deg, #5ba0f2, #4a90e2);
+    background: linear-gradient(145deg, #74a4de, #4a90e2);
     border-radius: 12px;
     margin-top: 3px;
     border: 2px solid #357abd;
@@ -632,5 +636,58 @@
     }
     50% {
         transform: rotate(20deg);
+    }
+}
+
+.modal-actions {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-primary {
+    background-color: #2989c9;
+    color: white;
+    border: none;
+    padding: 1rem 1.5rem;
+    border-radius: 25px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    flex: 1;
+    max-width: 180px;
+}
+
+.btn-secondary {
+    background-color: rgb(237, 226, 226);
+    color: #666;
+    border: 2px solid #ddd;
+    padding: 1rem 1.5rem;
+    border-radius: 25px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    flex: 1;
+    max-width: 180px;
+}
+
+@media (max-width: 768px) {
+    .modal-content {
+        margin: 1rem;
+        padding: 1.5rem;
+    }
+    
+    .modal-actions {
+        flex-direction: column;
+        gap: 0.8rem;
+    }
+    
+    .btn-primary,
+    .btn-secondary {
+        width: 100%;
+        max-width: none;
     }
 }
